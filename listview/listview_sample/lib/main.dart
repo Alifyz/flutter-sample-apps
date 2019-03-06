@@ -23,14 +23,7 @@ class MyApp extends StatelessWidget {
         backgroundColor: Colors.orange
 
       ),
-      home: new Scaffold(
-        appBar: new AppBar(
-          title: new Text("ListView Sample"),
-        ),
-        body: new Center(
-          child: new CustomList(),
-        ),
-      )
+      home: new CustomList()
     );
   }
 }
