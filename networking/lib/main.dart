@@ -24,7 +24,7 @@ class MyApp extends StatelessWidget {
             builder: (context, snapshot) {
               if(snapshot.hasData) {
                 return Text(snapshot.data.title);
-              } else if(snapshot.hasError) {
+              } else if(snapshot.hasError) { 
                 return Text("${snapshot.error}");
               }
               return CircularProgressIndicator();
