@@ -1,5 +1,3 @@
-import 'dart:io';
-
 import 'package:flutter/material.dart';
 import 'package:networking/Post.dart';
 import 'dart:convert';
@@ -25,7 +23,7 @@ class MyApp extends StatelessWidget {
             future: fetchPosts(),
             builder: (context, snapshot) {
               if(snapshot.hasData) {
-                return Text(snapshot.data.movieName);
+                return Text(snapshot.data.title);
               } else if(snapshot.hasError) {
                 return Text("${snapshot.error}");
               }
