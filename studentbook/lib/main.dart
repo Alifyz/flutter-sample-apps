@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:studentbook/details.dart';
 
 void main() => runApp(MyApp());
 
@@ -10,26 +11,42 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.deepOrange,
       ),
-      home: Scaffold(
+      home: HomeScreen()
+    );
+  }
+}
+
+class HomeScreen extends StatelessWidget {
+  @override
+  Widget build(BuildContext mainContext) {
+   return Scaffold(
         appBar: AppBar(
           title: Text("Student Book App"),
         ),
-        body: Padding(
+        body: ListView.builder(
           padding: const EdgeInsets.all(8.0),
-          child: Center(
-            child: Card(
-              child: Text("Student Note 1"), 
-            ),
-          ),
+          itemCount: 5,
+          itemBuilder: (context, int index) {
+            return Card(
+              child: Column(children: <Widget>[
+                const ListTile(
+                  leading: Icon(Icons.star),
+                  title: Text("Student Notes"),
+                  subtitle: Text("Details Student Notes"),
+                )
+              ],),
+            );
+          },
         ),
         floatingActionButton: FloatingActionButton(
-          onPressed: () => {
-            
+          child: Icon(Icons.add), 
+          onPressed: () {
+             Navigator.push(
+              mainContext, 
+              MaterialPageRoute(builder: (mainContext) => DetailsScreen()));
           },
-          child: Icon(Icons.add),
         ),
-      ),
-    );
+   );
   }
 }
 
