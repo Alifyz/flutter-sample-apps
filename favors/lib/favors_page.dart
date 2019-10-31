@@ -1,3 +1,4 @@
+import 'package:favors/new_favors_page.dart';
 import 'package:flutter/material.dart';
 import 'favors_model.dart';
 
@@ -22,6 +23,15 @@ class FavorsPage extends StatelessWidget {
       child: Scaffold(
         appBar: AppBar(
           title: Text("Favor Management"),
+          actions: <Widget>[
+            FlatButton(
+              child: Text("New Favor"),
+              textColor: Colors.white,
+              onPressed: () {
+                Navigator.push(context, MaterialPageRoute(builder: (context) => NewFavor()));
+              },
+            )
+          ],
           bottom: TabBar(
             isScrollable: true,
             tabs: <Widget>[
