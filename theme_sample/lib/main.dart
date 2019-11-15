@@ -33,16 +33,16 @@ class MyApp extends StatelessWidget {
                   Text(
                     "This is a Header",
                     style: TextStyle(
-                      fontSize: 36.0,
-                      fontFamily: 'Muli',
-                      fontStyle: FontStyle.italic),
+                        fontSize: 36.0,
+                        fontFamily: 'Muli',
+                        fontStyle: FontStyle.italic),
                   ),
                   Text(
                     "This is simple text",
                     style: TextStyle(
-                      fontSize: 24.0,
-                      fontFamily: 'Muli',
-                      fontStyle: FontStyle.normal),
+                        fontSize: 24.0,
+                        fontFamily: 'Muli',
+                        fontStyle: FontStyle.normal),
                   ),
                 ],
               ),
@@ -50,11 +50,12 @@ class MyApp extends StatelessWidget {
           )
         : CupertinoApp(
             theme: CupertinoThemeData(
-              primaryColor: CupertinoColors.lightBackgroundGray,
-              textTheme: CupertinoTextThemeData(
-                //TODO Custom iOS Styles
-              )
-            ),
+                primaryColor: CupertinoColors.lightBackgroundGray,
+                textTheme: CupertinoTextThemeData(
+                    actionTextStyle: TextStyle(
+                        fontSize: 36.0,
+                        fontFamily: 'Muli',
+                        fontStyle: FontStyle.italic))),
             home: Container(),
           );
   }
