@@ -6,7 +6,6 @@ import 'package:provider/provider.dart';
 class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-
     final GroceryModel model = Provider.of<GroceryModel>(context);
 
     return Scaffold(
@@ -15,24 +14,25 @@ class HomeScreen extends StatelessWidget {
         ),
         floatingActionButton: FloatingActionButton(
           onPressed: () {
-            model.add(
-              GroceryEntity(
+            model.add(GroceryEntity(
                 id: 1,
                 title: 'Testing Title',
                 body: 'description',
-                isFavorite: 0
-              )
-            );
+                isFavorite: 0));
           },
           tooltip: 'Nova lista',
           child: Icon(Icons.add),
         ),
-        body: Consumer<GroceryModel>(
-          builder: (_, model, child) {
+        body: Consumer<List<GroceryEntity>>(
+          builder: (context, data, child) {
             return ListView.builder(
-              itemCount: model.groceryList.length,
-              itemBuilder: (_, index) {
-                return Text(model.groceryList[index].title);
+              itemCount: data.length,
+              itemBuilder: (context, index) {
+                if(data.length == 0 || data == null) {
+                  return Center(child: Text("empty list"),);
+                } else {
+                  return Center(child: Text(data[index].title),);
+                }
               },
             );
           },

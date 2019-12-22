@@ -8,10 +8,10 @@ class GroceryModel extends ChangeNotifier {
 
   List<GroceryEntity> _groceryList = List();
 
-  List<GroceryEntity> get groceryList => this._groceryList;
+  List<GroceryEntity> get getGroceryList => this._groceryList;
 
   void add(GroceryEntity groceryList) {
-    _groceryList.add(groceryList);
+    DatabaseDao().addGroceryList(groceryList);
     notifyListeners();
   }
 
@@ -20,14 +20,9 @@ class GroceryModel extends ChangeNotifier {
     notifyListeners();
   }
 
-  Future<List<GroceryEntity>> getGroceryList() async {
+  Future<List<GroceryEntity>> getDatabaseList() async {
     _groceryList = await DatabaseDao().getAllGroceryList();
-    return _groceryList;
-  }
-
-  
-  Future<List<GroceryEntity>> getLocalList() async {
-    return await DatabaseDao().getAllGroceryList();
+    return DatabaseDao().getAllGroceryList();
   }
 
 }
