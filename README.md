@@ -9,12 +9,15 @@ code, is used by developers and organizations around the world, and is free
 and open source.
 
  
-# TD;DR
+## TD;DR
 
 * Simple Apps (Bite size apps to test a specific topic)
 * Arquithecture samples
 * Articles and Guide
 
+## About
+
+This repository is dedicated to small projects to test the capability of the flutter framework and to practice skills creating apps with flutter for Android/iOS devices. You can also find small guides about a specific library or state-management techniques used with flutter. 
 
 ## Featured apps 
 
