@@ -1,35 +1,47 @@
-# Flutter Code Samples and Toy-apps
+# ![flutrer-logo](https://miro.medium.com/max/1498/0*MXYivtrvfMI2nZXU.)
 
-This Github Repository is dedicated to my independent and small projects and experiments on Flutter Development. 
+![badge](https://img.shields.io/github/followers/alifyz?label=Follow&style=social)
 
-# Pre-requisites
 
-  - Android Studio 3.0 or VS Code
-  - Android SDK Build Tools 23+
-  - Target SDK (19) - Most of them. 
-  - Dart Plugin for Android Studio or VS Code
+> Flutter is Google's SDK for crafting beautiful, fast user experiences for
+mobile, web and desktop from a single codebase. Flutter works with existing
+code, is used by developers and organizations around the world, and is free
+and open source.
+
  
-# Contact Info
+# TD;DR
 
-- Email: alifyz@outlook.com
-- Twitter: @AlifyzPires
+* Simple Apps (Bite size apps to test a specific topic)
+* Arquithecture samples
+* Articles and Guide
 
-### Flutter Framework
 
-In this folder, you will find projects using the following set of Libraries. 
+## Featured apps 
 
-- Flutter Packages
-- BloC Mobile Architecture
-- Material Design 
-- Flutter Streams, Isolates and Threading
-- SQLite Data Persistence
-- Dependency Injection: Provider
-- Firebase Services
-- Networking
-- RestAPI - Apps
-- Google Play Services. 
-- Push Notifications
-- iOS Cupertino Style 
+- WIP
+
+## Build with :hammer:
+
+- WIP
+
+## Repository folders
+
+```
+root
+├── toyapps
+│   └── ...
+├── architecture
+│   └── inherited-widget
+│   └── provider
+│   └── bloc
+│   └── mobx
+│   └── mvvm
+│   └── ...
+│       
+└── featured-apps
+└── guides
+
+```
 
 License
 ----
