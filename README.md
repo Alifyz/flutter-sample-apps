@@ -11,8 +11,8 @@ and open source.
  
 ## TD;DR
 
-* Simple Apps (Bite size apps to test a specific topic)
-* Arquithecture samples
+* [Simple Apps (Bite size apps to test a specific topic)](https://github.com/Alifyz/flutter-sample-apps/tree/master/toyapps)
+* [Arquithecture samples](https://github.com/Alifyz/flutter-sample-apps/tree/master/architecture)
 * Articles and Guide
 
 ## About
