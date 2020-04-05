@@ -1,4 +1,4 @@
-# ![flutrer-logo](https://miro.medium.com/max/1498/0*MXYivtrvfMI2nZXU.)
+# ![flutrer-logo](https://thumbs.gfycat.com/DifferentForsakenArcherfish-size_restricted.gif)
 
 ![badge](https://img.shields.io/github/followers/alifyz?label=Follow&style=social)
 
@@ -9,7 +9,7 @@ code, is used by developers and organizations around the world, and is free
 and open source.
 
  
-## TD;DR
+## Links
 
 * [Simple Apps (Bite size apps to test a specific topic)](https://github.com/Alifyz/flutter-sample-apps/tree/master/toyapps)
 * [Arquithecture samples](https://github.com/Alifyz/flutter-sample-apps/tree/master/architecture)
