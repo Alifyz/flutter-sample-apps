@@ -2,49 +2,20 @@
 
 ![badge](https://img.shields.io/github/followers/alifyz?label=Follow&style=social)
 
-
-> Flutter is Google's SDK for crafting beautiful, fast user experiences for
-mobile, web and desktop from a single codebase. Flutter works with existing
-code, is used by developers and organizations around the world, and is free
-and open source.
-
  
-## TD;DR
-
-* Simple Apps (Bite size apps to test a specific topic)
-* Arquithecture samples
-* Articles and Guide
-
 ## About
 
-This repository is dedicated to small projects to test the capability of the flutter framework and to practice skills creating apps with flutter for Android/iOS devices. You can also find small guides about a specific library or state-management techniques used with flutter. 
+In this section you will find small samples that uses a variety of state management techniques to better structure your app for your needs. 
 
-## Featured apps 
+## Architecture Templates
 
-- WIP
+- [x] [Provider + ChangeNotifier](https://github.com/Alifyz/mercado-app)
+- [ ] BloC (In Progress)
+- [ ] MobX (In Progress)
+- [ ] Redux (In Progress)
+- [ ] MVI (In Progress)
+- [ ] MVU (In Progress)
 
-## Build with :hammer:
-
-- WIP
-
-## Repository folders
-
-```
-root
-├── toyapps
-│   └── ...
-├── architecture
-│   └── inherited-widget
-│   └── provider
-│   └── bloc
-│   └── mobx
-│   └── mvvm
-│   └── ...
-│       
-└── featured-apps
-└── guides
-
-```
 
 License
 ----
