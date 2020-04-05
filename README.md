@@ -21,11 +21,8 @@ This repository is dedicated to small projects to test the capability of the flu
 
 ## Featured apps 
 
-- WIP
+[![AppPreview](https://thumbs.gfycat.com/NeglectedWigglyIsabellineshrike-size_restricted.gif)
 
-## Build with :hammer:
-
-- WIP
 
 ## Repository folders
 
