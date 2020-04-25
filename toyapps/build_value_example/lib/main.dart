@@ -26,19 +26,22 @@ class _MyAppState extends State<MyApp> {
         primarySwatch: Colors.blue,
       ),
       home: Scaffold(
-          body: FutureBuilder<Posts>(
+          body: FutureBuilder<List<Post>>(
               future: getPosts(),
               builder: (context, snapshot) {
                 if (snapshot.hasData) {
                   return ListView.builder(
-                      itemCount: snapshot.data.posts.length,
+                      itemCount: snapshot.data.length,
                       itemBuilder: (context, index) {
                         return ListTile(
-                          title: Text(snapshot.data.posts[index].title),
+                          title: Text(snapshot.data[index].title),
+                          leading: Icon(Icons.new_releases),
                         );
                       });
                 } else {
-                  return Container();
+                  return Center(
+                    child: CircularProgressIndicator(),
+                  );
                 }
               }),
           appBar: AppBar(
