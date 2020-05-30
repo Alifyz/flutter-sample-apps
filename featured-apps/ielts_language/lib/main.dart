@@ -34,31 +34,9 @@ class MyApp extends StatelessWidget {
                         Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
-                            Padding(
-                              padding: const EdgeInsets.all(8.0),
-                              child: Text(
-                                'Advanced \nListing',
-                                style: TextStyle(
-                                    color: Colors.white,
-                                    fontSize: 32,
-                                    fontWeight: FontWeight.bold),
-                              ),
-                            ),
-                            Padding(
-                              padding: const EdgeInsets.all(8.0),
-                              child: Text(
-                                'Lorem Ipsum is simply\ndummy text of the.',
-                                style: TextStyle(color: Colors.white),
-                              ),
-                            ),
-                            Padding(
-                              padding: const EdgeInsets.all(8.0),
-                              child: Container(
-                                width: 36,
-                                height: 36,
-                                color: Colors.white10,
-                              ),
-                            )
+                            CourseTitle(),
+                            CourseDescription(),
+                            CourseDetails()
                           ],
                         ),
                         StudentWidget()
@@ -68,6 +46,87 @@ class MyApp extends StatelessWidget {
                 )),
           ],
         ),
+      ),
+    );
+  }
+}
+
+class CourseDescription extends StatelessWidget {
+  const CourseDescription({
+    Key key,
+  }) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Padding(
+      padding: const EdgeInsets.all(8.0),
+      child: Text(
+        'Lorem Ipsum is simply\ndummy text of the.',
+        style: TextStyle(color: Colors.white),
+      ),
+    );
+  }
+}
+
+class CourseTitle extends StatelessWidget {
+  const CourseTitle({
+    Key key,
+  }) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Padding(
+      padding: const EdgeInsets.all(8.0),
+      child: Text(
+        'Advanced \nListing',
+        style: TextStyle(
+            color: Colors.white, fontSize: 32, fontWeight: FontWeight.bold),
+      ),
+    );
+  }
+}
+
+class CourseDetails extends StatelessWidget {
+  const CourseDetails({
+    Key key,
+  }) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Padding(
+      padding: const EdgeInsets.all(8.0),
+      child: Row(
+        children: [
+          Container(
+            width: 36,
+            height: 36,
+            decoration: BoxDecoration(
+                color: Colors.white10, borderRadius: BorderRadius.circular(8)),
+            child: Icon(
+              Icons.supervised_user_circle,
+              color: Colors.white,
+            ),
+          ),
+          Padding(
+            padding: const EdgeInsets.only(left: 4),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text(
+                  '7056',
+                  style: TextStyle(
+                    color: Colors.white,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+                Text('Students',
+                    style: TextStyle(
+                      color: Colors.white,
+                    ))
+              ],
+            ),
+          )
+        ],
       ),
     );
   }
@@ -85,8 +144,7 @@ class HeaderNavigationActions extends StatelessWidget {
       children: [
         Container(
           decoration: BoxDecoration(
-              color: Colors.white12,
-              borderRadius: BorderRadius.circular(8)),
+              color: Colors.white12, borderRadius: BorderRadius.circular(8)),
           child: Icon(
             Icons.arrow_left,
             color: Colors.white,
@@ -95,8 +153,7 @@ class HeaderNavigationActions extends StatelessWidget {
         ),
         Container(
           decoration: BoxDecoration(
-              color: Colors.white12,
-              borderRadius: BorderRadius.circular(8)),
+              color: Colors.white12, borderRadius: BorderRadius.circular(8)),
           child: Icon(
             Icons.add_alert,
             color: Colors.white,
