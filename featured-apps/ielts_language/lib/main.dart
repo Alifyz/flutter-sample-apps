@@ -26,36 +26,13 @@ class MyApp extends StatelessWidget {
                         left: 16,
                         right: 16,
                       ),
-                      child: Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                        children: [
-                          Container(
-                            decoration: BoxDecoration(
-                                color: Colors.white12,
-                                borderRadius: BorderRadius.circular(8)),
-                            child: Icon(
-                              Icons.arrow_left,
-                              color: Colors.white,
-                              size: 48,
-                            ),
-                          ),
-                          Container(
-                            decoration: BoxDecoration(
-                                color: Colors.white12,
-                                borderRadius: BorderRadius.circular(8)),
-                            child: Icon(
-                              Icons.add_alert,
-                              color: Colors.white,
-                              size: 48,
-                            ),
-                          )
-                        ],
-                      ),
+                      child: HeaderNavigationActions(),
                     ),
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
                         Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             Padding(
                               padding: const EdgeInsets.all(8.0),
@@ -67,10 +44,21 @@ class MyApp extends StatelessWidget {
                                     fontWeight: FontWeight.bold),
                               ),
                             ),
-                            Text(
-                              'Lorem Ipsum is simply\ndummy text of the.',
-                              style: TextStyle(color: Colors.white),
+                            Padding(
+                              padding: const EdgeInsets.all(8.0),
+                              child: Text(
+                                'Lorem Ipsum is simply\ndummy text of the.',
+                                style: TextStyle(color: Colors.white),
+                              ),
                             ),
+                            Padding(
+                              padding: const EdgeInsets.all(8.0),
+                              child: Container(
+                                width: 36,
+                                height: 36,
+                                color: Colors.white10,
+                              ),
+                            )
                           ],
                         ),
                         StudentWidget()
@@ -81,6 +69,41 @@ class MyApp extends StatelessWidget {
           ],
         ),
       ),
+    );
+  }
+}
+
+class HeaderNavigationActions extends StatelessWidget {
+  const HeaderNavigationActions({
+    Key key,
+  }) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Row(
+      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+      children: [
+        Container(
+          decoration: BoxDecoration(
+              color: Colors.white12,
+              borderRadius: BorderRadius.circular(8)),
+          child: Icon(
+            Icons.arrow_left,
+            color: Colors.white,
+            size: 48,
+          ),
+        ),
+        Container(
+          decoration: BoxDecoration(
+              color: Colors.white12,
+              borderRadius: BorderRadius.circular(8)),
+          child: Icon(
+            Icons.add_alert,
+            color: Colors.white,
+            size: 48,
+          ),
+        )
+      ],
     );
   }
 }
