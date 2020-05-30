@@ -36,10 +36,15 @@ class MyApp extends StatelessWidget {
                           children: [
                             CourseTitle(),
                             CourseDescription(),
-                            CourseDetails()
+                            Row(
+                              children: [
+                                CourseDetails(),
+                                CourseDetails(),
+                              ],
+                            )
                           ],
                         ),
-                        StudentWidget()
+                        Expanded(child: StudentWidget())
                       ],
                     )
                   ],
